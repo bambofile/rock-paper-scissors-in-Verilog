@@ -1,0 +1,35 @@
+module game;
+reg [2:0] A =1;    //1paper 2rock 3scissors
+reg [2:0] B =1;  //1paper 2rock 3scissors
+reg [4:0] D;     
+initial begin
+  D = (A + A + A + B);
+  if (D == 4) begin  
+  $display("nobode wins");
+  end
+  if (D == 5) begin  
+  $display("win paper(1)");
+  end
+    if (D == 6) begin  
+  $display("win scissors(2)");
+  end
+    if (D == 7) begin  
+  $display("win paper(2)");
+  end
+    if (D == 8) begin  
+  $display("nobody wins");
+    end
+    if (D == 9) begin  
+  $display("win rock(1)");
+    end
+    if (D == 10) begin  
+  $display("win scissors(1)");
+    end
+    if (D == 11) begin  
+  $display("win rock(2)");
+    end
+    if (D == 12) begin  
+  $display("win paper(1)");
+    end
+end
+endmodule
