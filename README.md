@@ -1,2 +1,4 @@
 # rock-paper-scissors-in-Verilog
-bro read name
+REG A is 1th player choise
+REG B is 2th player choise
+
